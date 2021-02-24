@@ -3,14 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
+	<header>
+		<div class="container">
+			<h2 class="title">Kamień, papier, nożyce</h2>
+		</div>
+	</header>
+
+	<section class="instruction-box">
+		<div class="container">
+			<h2>Instrukcja</h2>
+			<p>Kamień wygrywa z nożycami</p>
+			<p>Papier wygrywa z kamieniem</p>
+			<p>Nożyce wygrywają z papierem</p>
+		</div>
+	</section>
+
+	<section class="game">
+		<div class="container">
+			<div class="buttons" id="buttons">
+				<button id="button-paper" class="button">papier</button>
+				<button id="button-rock" class="button">kamień</button>
+				<button id="button-scissors" class="button">nożyce</button>
+			</div>
+			<div id="messages"></div>
+			<div id="results"></div>
+		</div>
+	</section>
+	
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
